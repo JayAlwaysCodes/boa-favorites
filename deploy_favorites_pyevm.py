@@ -1,5 +1,6 @@
 import boa
 
+
 def main():
     print("Let's read in the Vyper code and deploy it!")
     favorites_contract = boa.load("favorites.vy")
