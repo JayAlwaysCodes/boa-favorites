@@ -14,14 +14,13 @@ def main():
 
     favorites_contract = boa.load("favorites.vy")
 
-    starting_favorite_number = favorites_contract.retrieve()
-    print(f"Starting favorite number is: {starting_favorite_number}")
+    print("Storing a person...")
+    favorites_contract.add_person("Alice", 20)
 
-    print("Storing number...")
-    favorites_contract.store(30)
+    person_data = favorites_contract.list_of_people(0)
+    print(f"Person: {person_data}")
 
-    ending_favorite_number = favorites_contract.retrieve()
-    print(f"Ending favorite number is: {ending_favorite_number}")
+    
 
 
 
