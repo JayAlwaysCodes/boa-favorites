@@ -4,3 +4,4 @@ pyproject.toml
 guide.py
 uv.lock
 __pycache__
+recap.md
